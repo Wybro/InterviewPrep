@@ -7,3 +7,13 @@
  - Bonus points for custom print-out of Car struct (CustomStringConvertible)
 */
 
+
+
+/*
+ ---------------------------
+ Nil Coalescing
+ - Task: Set the value of yourAnswer to something (non-nil) in the event that someOptional is nil (which it is)
+ - Given:
+     - let someOptional: String?
+     - let yourAnswer =  <---- You'll be finishing this line
+*/
