@@ -8,7 +8,6 @@
 */
 
 
-
 /*
  ---------------------------
  Nil Coalescing
@@ -17,3 +16,16 @@
      - let someOptional: String?
      - let yourAnswer =  <---- You'll be finishing this line
 */
+
+/*
+ given an array of repeating strings (not unique), return the count of each element
+ */
+
+
+
+
+
+
+
+
+
