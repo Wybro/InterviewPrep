@@ -3,6 +3,7 @@
 * Data Structures
 * Running time
 * Higher order functions
+--------
 
 ### Question 1
 Find the **MOST** frequent integer(s) in an array
