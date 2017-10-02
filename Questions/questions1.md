@@ -7,26 +7,26 @@
 ### Question 1
 Find the **MOST** frequent integer(s) in an array
 
-#### Example
+#### Example:
 ``` Swift
-yourFunction(arr: [0,2,1,4,0,3]) // returns [0]
+method(arr: [0,2,1,4,0,3]) // returns [0]
 ```
 
 ### Question 2
 Find the **LEAST** frequent integer(s) in an array
 
-#### Example
+#### Example:
 ``` Swift
-yourFunction(arr: [0,2,1,4,0,3]) // returns [2,1,4,3]
+method(arr: [0,2,1,4,0,3]) // returns [2,1,4,3]
 ```
 
 ### Question 3
 Check whether or not a String contains all unique characters
 
-#### Example
+#### Example:
 ``` Swift
-yourFunction(str: "hi") // returns true
-yourFunction(str: "hello") // returns false
+method(str: "hi") // returns true
+method(str: "hello") // returns false
 ```
 
 ### Question 4
@@ -37,16 +37,16 @@ Note:
 
 **Bonus:** Do this efficiently --> O(n) time after some pre-processing (assumes Strings are roughly same size)
 
-#### Example
+#### Example:
 ``` Swift
-yourFunction(str1: "berries", str2: "bees") // returns true
-yourFunction(str1: "banana", str2: "band") // returns false
+method(str1: "berries", str2: "bees") // returns true
+method(str1: "banana", str2: "band") // returns false
 ```
 
 ### Question 5
 Given an array of potentially optional values (some nil), return an array with no nils
 
-#### Example
+#### Example:
 ``` Swift
-yourFunction(arr: [0,3,nil,2,nil]) // returns [0,3,2]
+method(arr: [0,3,nil,2,nil]) // returns [0,3,2]
 ```
