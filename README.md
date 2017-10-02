@@ -5,7 +5,7 @@ A collection of Swift questions and challenges to help prepare for a Swift / iOS
 
 
 <details>
- <summary>The Format:</summary>
+ <summary><h2>The Format:</h2></summary>
 
  ## Our Question Pages Begin with the Topics to be Covered
  * From Arrays to Strings
@@ -27,7 +27,7 @@ A collection of Swift questions and challenges to help prepare for a Swift / iOS
  </details>
 </details>
 
-# Questions
+## Questions
 
 | Topics Covered | Questions | Solutions |
 |:--------------:|:---------:|:---------:|
