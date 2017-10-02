@@ -18,7 +18,7 @@ A collection of Swift questions and challenges to help prepare for a Swift / iOS
  someFunc() // written in as a block of code
  ```
  <details>
-  <summary>**And an inline solution or hint if the problem calls for one:**</summary>
+  <summary><em>And an inline solution or hint if the problem calls for one:</em></summary>
 
   ```Swift
   // a code block here makes the most sense too
