@@ -3,22 +3,28 @@
 # Interview Prep
 A collection of Swift questions and challenges to help prepare for a Swift / iOS technical interview
 
-## Our Question Pages Begin with the Topics to be Covered
-* From Arrays to Strings
-* To running times and more
 
-### Our Questions Will Come Next
-Each question is accompanied by a short description of the problem
-#### An Example too, if the problem needs one:
-```Swift
-written in as a block of code
-```
 <details>
- <summary>And an inline solution or hint if the problem calls for one:</summary>
+ <summary>The Format:</summary>
 
+ ## Our Question Pages Begin with the Topics to be Covered
+ * From Arrays to Strings
+ * To running times and more
+
+ ### Our Questions Will Come Next
+ Each question is accompanied by a short description of the problem
+ #### An Example too, if the problem needs one:
  ```Swift
- a code block here makes the most sense too
+ someFunc() // written in as a block of code
  ```
+ <details>
+  <summary>**And an inline solution or hint if the problem calls for one:**</summary>
+
+  ```Swift
+  // a code block here makes the most sense too
+  fooFunc(int: coolParams)
+  ```
+ </details>
 </details>
 
 # Questions
