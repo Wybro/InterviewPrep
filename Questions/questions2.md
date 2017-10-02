@@ -5,8 +5,10 @@
 --------
 
 ### Question 1
-Define a Person struct that includes a name (String) property, and age (Int) property
-**Additionally:** Define a function that prints out a greeting String based on the Person's name
+Define a Person struct that includes the following:
+* `name` property (String)
+* `age` property (Int)  
+* function that prints out a greeting String based on the Person's name
 
 #### Solution:
 ```Swift
@@ -66,22 +68,22 @@ ARC = Automatic Reference Counting
 * This means both objects will stay alive until the references are removed
 * Retain cycles can lead to memory leaks if not handled properly
 
-#### Solution:
-It might be useful to maintain a strong retain cycle when an operation should outlive the entity that initiated it.
+#### Solution:  
+* It might be useful to maintain a strong retain cycle when an operation should outlive the entity that initiated it.
 --------
 
 ### Question 5
 Create two classes and implement the `delegate` pattern
 
 #### Solution:
-Step 1: Create two structs -- maybe A & B
+Step 1: Create two structs
 ```Swift
 struct A {}
 
 struct B {}
 ```
 
-Step 2: Create a protocol delegate for one of the classes -- maybe `ADelegate` -- and write simple method signature for delegate to implement
+Step 2: Create a protocol delegate for one of the classes and write simple method signature for delegate to implement
 ```Swift
 protocol ADelegate {
   func someDelegateFunc()
