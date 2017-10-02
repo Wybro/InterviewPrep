@@ -12,9 +12,6 @@ Find the **MOST** frequent integer(s) in an array
 yourFunction(arr: [0,2,1,4,0,3]) // returns [0]
 ```
 
-
-
-
 ### Question 2
 Find the **LEAST** frequent integer(s) in an array
 
