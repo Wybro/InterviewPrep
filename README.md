@@ -3,4 +3,4 @@
 # Interview Prep
 A collection of Swift questions and challenges to help prepare for a Swift / iOS technical interview
 
-[Test Markdown Link](Questions/test.md)
+[Test Markdown Link](Questions/TEST.md)
