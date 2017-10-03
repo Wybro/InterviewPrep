@@ -5,7 +5,7 @@ A collection of Swift questions and challenges to help prepare for a Swift / iOS
 
 
 <details>
- <summary><h2>The Format:</h2></summary>
+ <summary style="font-size:1.5em;font-weight:bold;">The Format:</summary>
 
  ## Our Question Pages Begin with the Topics to be Covered
  * From Arrays to Strings
