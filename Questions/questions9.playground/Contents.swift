@@ -78,7 +78,7 @@ gloryDays.forEach { gloryDay in
     gloryDay.time.bestTimeOfYourLife() == "Past" ? print("You must be sumThic because your best days are in the past.") : print("You must be the Wybros because your future is maad bright")
 }
 
-let string = "Some Thick"
+let string = "SomeThick"
 let split = string.split(separator: " ")
 print(split.joined(separator: " "))
 

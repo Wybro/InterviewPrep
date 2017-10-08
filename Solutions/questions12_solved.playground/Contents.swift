@@ -15,6 +15,15 @@ func sum(_ column: Int, arr: [[Int]]) -> Int {
     return sum
 }
 
+// Kyle's solution
+func sumFor(_ columnNum: Int, arr: [[Int]]) -> Int {
+    if columnNum > arr.count {
+        return -1
+    }
+    return arr.map { $0[columnNum] }.reduce(0,+)
+}
+
+
 //print(sum(10, arr: arr))
 //print(sum(0, arr: arr))
 //print(sum(1, arr: arr))
@@ -59,4 +68,28 @@ let notSquare = [[1,2],[1],[2,4]]
 let square = [[1,2,6], [2,3,7],[3,5,2]]
 //print(notSquare.square())
 //print(square.square())
+
+
+// Kyle's solution
+
+func diagSum(arr: [[Int]]) -> Int {
+    guard arr.square() else { return -1 }
+    var sum = 0
+    for (index,row) in arr.enumerated() {
+        sum += row[index]
+    }
+    return sum
+}
+
+extension Array where Element == [Int] {
+    func square() -> Bool {
+        for arr in self {
+            if arr.count != self.count {
+                return false
+            }
+        }
+        return true
+    }
+}
+
 

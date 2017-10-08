@@ -8,7 +8,6 @@
 
 
 
-
 /* ------------------------------------------------------
  -Given: 2D matrix
      * let arrSmall = [[1,2],[3,4]]
@@ -17,5 +16,3 @@
  -Bonus points:
      * Consider case when matrix isn't square -- write func (extension?!) to check
 */
-
-
