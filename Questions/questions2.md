@@ -24,6 +24,7 @@ Define a Person struct that includes the following:
  }
  ```
 </details>
+
 --------
 
 ### Question 2
@@ -49,6 +50,7 @@ Define a Car class with some properties, one custom constructor, and a default c
  }
  ```
 </details>
+
 --------
 
 ### Question 3
@@ -63,6 +65,7 @@ Define an enum Compass that includes cases for all directions
  }
  ```
 </details>
+
 --------
 
 ### Question 4
@@ -83,6 +86,7 @@ ARC = Automatic Reference Counting
 It might be useful to maintain a strong retain cycle when an operation should outlive the entity that initiated it.
 
 </details>
+
 --------
 
 ### Question 5
@@ -139,4 +143,5 @@ Create two classes and implement the `delegate` pattern
  a.delegatedMethod()
  ```
 </details>
+
 --------
