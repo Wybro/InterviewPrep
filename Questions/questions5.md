@@ -36,7 +36,7 @@ Use zip to:
 * create a dictionary where the key is a `String` and the value is an `Int`
 * the key represents a word in the first array and the value represents a count in the second array
 
- #### Example:
+#### Example:
  ```Swift
 let strArr = ["Kyle", "is", "like", "cool", "I", "word"]
 let intArr = [3,6,5,10,4,2]
