@@ -28,13 +28,11 @@ print(fruitArr.sorted { $1 < $0 })
 
 print(arc4random())
 
-
 extension CountableClosedRange where Bound == Int {
-    
     func random() -> Int {
         return Int(arc4random_uniform(UInt32(upperBound - lowerBound))) + lowerBound
     }
 }
 
-print((30...35).random())
+print((1...30).random())
 

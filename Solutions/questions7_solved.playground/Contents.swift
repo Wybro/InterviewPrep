@@ -32,6 +32,19 @@ let range2 = splitIndex..<numStr.endIndex
 print(numStr[range1] + numStr[range2].reversed() + (nums % 2 == 0 ? "even" : " not even"))
 
 
+
+extension Int {
+    func reverse() -> Int {
+        let numStr = "\(self)"
+        let splitIndex = numStr.index(numStr.startIndex, offsetBy: 1)
+        let range = splitIndex..<numStr.endIndex
+        let reversedNumStr = "-\(String(numStr[range].reversed()))"
+        return Int(reversedNumStr)!
+    }
+}
+let nums2 = -524 // return -425
+print(nums2.reverse())
+
 /*
  Take an array of strings, double them and filter out the ones that are longer than 6 characters
  */
@@ -50,8 +63,7 @@ let strArr: [String] = ["A", "Cat", "Jumped", "Else", "Football", "Tinder", "Boy
 print(strArr.filter { $0.length() < 3 }.map { $0.double() })
 
 /*
- Two arrays of strings, array1 and array2. Given these two arrays, return the unique elements that are in one array and then the unique
- elements from the second array and then the shared elements
+ One array of strings, array1. Given this array, return the unique elements that are in one array
  */
 
 let array1: [String] = ["An", "Apple", "Is", "A", "Fruit", "Apple"]

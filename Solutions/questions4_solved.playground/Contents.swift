@@ -37,7 +37,7 @@ func charCount(arr: [String]) -> [Character:Int] {
     var charCount: [Character:Int] = [:]
     let str = arr.filter { $0.length() > 3 }.joined()
     
-    for char in str {
+    for char in str.characters {
         if charCount[char] != nil {
             charCount[char] = charCount[char]! + 1
         } else {

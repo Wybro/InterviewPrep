@@ -19,6 +19,29 @@
     let arr = [0,2,1,4,0,3] --> returns [0]
 */
 
+func mostFreq(arr: [Int]) -> [Int] {
+//    var numFreq: [Int:Int] = [:]
+    var numFreq = [Int:Int]()
+    for num in arr {
+        if numFreq[num] != nil {
+            numFreq[num] = numFreq[num]! + 1
+        } else {
+            numFreq[num] = 1
+        }
+    }
+    var mostFreqNums: [Int] = []
+    var highestCount = 0
+    for (num,count) in numFreq {
+        if count > highestCount {
+            highestCount = count
+            mostFreqNums = []
+            mostFreqNums.append(num)
+        } else if count == highestCount {
+            mostFreqNums.append(num)
+        }
+    }
+    return mostFreqNums
+}
 
 
 /* -----------------------------------------------------------------------
@@ -29,7 +52,33 @@
     let arr = [0,2,1,4,0,3] --> returns [2,1,4,3]
 */
 
-
+    func leastFreq(arr: [Int]) -> [Int] {
+        //    var numFreq: [Int:Int] = [:]
+        var numFreq = [Int:Int]()
+        var lowestCount: Int? = nil
+        if arr.count > 0 {
+            lowestCount = 1
+            for num in arr {
+                if numFreq[num] != nil {
+                    numFreq[num] = numFreq[num]! + 1
+                } else {
+                    numFreq[num] = 1
+                }
+            }
+            var leastFreqNums: [Int] = []
+            for (num,count) in numFreq {
+                if count < lowestCount! {
+                    lowestCount = count
+                    leastFreqNums = []
+                    leastFreqNums.append(num)
+                } else if count == lowestCount! {
+                    leastFreqNums.append(num)
+                }
+                return leastFreqNums
+            }
+        }
+        return arr
+}
 
 /* -----------------------------------------------------------------------
  Question 3
@@ -40,7 +89,23 @@
     let str2 = "hello" --> returns false
 */
 
+func unique(_ str: String) -> Bool {
+    var charArray: [Character] = []
+    for char in str.characters {
+        if charArray.contains(char) {
+            return false
+        } else {
+            charArray.append(char)
+        }
+    }
+    return true
+}
 
+let str1 = "hi"
+let str2 = "hello"
+
+print(unique(str1))
+print(unique(str2))
 
 /* -----------------------------------------------------------------------
  Question 4
@@ -54,8 +119,18 @@
  
  *Bonus: Do this efficiently --> O(n) time after some pre-processing (assumes Strings are roughly same size)
 */
+extension String {
 
-
+    func isSubstring(_ str: String) -> Bool {
+        let charArr = Array(self)
+        for char in str.characters {
+            if !charArr.contains(char) {
+                return false
+            }
+        }
+        return true
+    }
+}
 
 /* -----------------------------------------------------------------------
  Question 5 -- High Order Functions (Hard)
@@ -64,3 +139,5 @@
  - Example:
     let arr = [0,3,nil,2,nil] --> returns [0,3,2]
 */
+let arr = [0,3,nil,2,nil]
+print(arr.flatMap { $0 })
