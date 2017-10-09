@@ -4,6 +4,7 @@
  
  Topics covered:
  - String manipulation (substrings)
+ - typealias protocol
  ------------------------------------------------------------------------
  */
 
@@ -20,29 +21,10 @@ import Foundation
 
 let strArr: [String?] = ["Do", "Connor", "Kyle", "A", "", nil]
 
-
-func upperStr(str: String) -> String {
-  // string has two characters to be uppercased
-    let startingIndex = str.startIndex
-    let endingIndex = str.index(str.endIndex, offsetBy: -2)
-    let range = startingIndex..<endingIndex
-    return String(str[range]) + (str.lastTwo().uppercased())
-}
-
-
 extension String {
     
     func length() -> Int {
         return self.characters.count
-    }
-
-    func lastTwo() -> String {
-        let startingIndex = self.index(self.endIndex, offsetBy: -2)
-        let endingIndex = self.endIndex
-        let range = startingIndex..<endingIndex
-        
-        return String(self[range])
-        
     }
     
     func wholeStr() -> String {
@@ -54,14 +36,17 @@ extension String {
     }
 }
 
+print(strArr.flatMap { $0 }.filter { $0.length() >= 2 }.map { $0.wholeStr() })
+
+
+// Given a struct, typealias it to another name
+
 struct Connor {
     
 }
 
 let a = Connor()
-
 typealias Kyle = Connor
-
 
 let b = Kyle()
 
@@ -71,7 +56,3 @@ class PrimalCustomViewTextLabel {
 
 typealias customLabel = PrimalCustomViewTextLabel
 
-
-
-print(strArr.flatMap { $0 }.filter { $0.length() >= 2 }.map { upperStr(str: $0) })
-print(strArr.flatMap { $0 }.filter { $0.length() >= 2 }.map { $0.wholeStr() })
