@@ -31,5 +31,5 @@ A collection of Swift questions and challenges to help prepare for a Swift / iOS
 
 | Topics Covered | Questions | Solutions |
 |:--------------:|:---------:|:---------:|
-|Arrays, etc.    |[The Basics](Questions/questions1.md)|[Solutions](Solutions/questions1.md)|
+|Arrays, etc.    |[The Basics](Questions/questions1.md)|[Solutions](Solutions/solutions1.md)|
 |Classes, Structs, etc.   |[Object Orientation](Questions/questions2.md)|[Solutions](Solutions/questions2.md)|
