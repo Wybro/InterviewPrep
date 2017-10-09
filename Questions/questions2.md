@@ -11,9 +11,9 @@ Define a Person struct that includes the following:
 * function that prints out a greeting String based on the Person's name
 
 <details>
- <summary><strong>Solution:</strong></summary>
+ <summary><strong>Solution:</strong></summary><br>
 
- ```Swift
+```Swift
  struct Person {
    let name: String
    let age: Int
@@ -31,7 +31,7 @@ Define a Person struct that includes the following:
 Define a Car class with some properties, one custom constructor, and a default constructor -- `init()`
 
 <details>
- <summary><strong>Solution:</strong></summary>
+ <summary><strong>Solution:</strong></summary><br>
 
  ```Swift
  class Car {
@@ -57,7 +57,7 @@ Define a Car class with some properties, one custom constructor, and a default c
 Define an enum Compass that includes cases for all directions
 
 <details>
- <summary><strong>Solution:</strong></summary>
+ <summary><strong>Solution:</strong></summary><br>
 
  ```Swift
  enum Compass {
@@ -81,7 +81,7 @@ ARC = Automatic Reference Counting
 * Retain cycles can lead to memory leaks if not handled properly
 
 <details>
- <summary><strong>Solution:</strong></summary>
+ <summary><strong>Solution:</strong></summary><br>
 
 It might be useful to maintain a strong retain cycle when an operation should outlive the entity that initiated it.
 
@@ -93,7 +93,7 @@ It might be useful to maintain a strong retain cycle when an operation should ou
 Create two classes and implement the `delegate` pattern
 
 <details>
- <summary><strong>Solution:</strong></summary>
+ <summary><strong>Solution:</strong></summary><br>
 
  Step 1: Create two structs
  ```Swift
