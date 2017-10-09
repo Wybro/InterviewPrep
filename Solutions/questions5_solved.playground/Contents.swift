@@ -1,6 +1,9 @@
-//: Playground - noun: a place where people can play
-
-import UIKit
+/*
+ ## Topics covered
+ * Data structure creation
+ * Using zip
+ --------
+ */
 
 // Array of Ints, Dictionary of Ints and Booleans, Set of Strings
 
@@ -18,29 +21,23 @@ var set1 = Set<String>()
 var set2: Set<String> = ["Kyle","is","cool"]
 
 
-
-// array of optional strings, give back the array of just strings
-
-var opArr: [String?] = ["Kyle", nil, "Joe", "Connor", nil, "CnorMan"]
-
-let arr = opArr.flatMap { $0 }
-print(arr)
-
-
 // zip: array of strings in a particular order, an array of integers where the integer corresponds to the number of times the string occurs in a text file
 
 let strArr: [String] = ["Kyle","is","the","cool","guy","things","Joe"]
 let intArr: [Int] = [4,6,9,10,4,2,3]
-var swiftDict = [String:Int]()
 
-for (str, int) in zip(strArr, intArr) {
-    swiftDict[str] = int
-    print(str, int)
+func zipper(arr1: [String], arr2: [Int]) -> [String:Int] {
+    var swiftDict = [String:Int]()
+    for (str, int) in zip(arr1, arr2) {
+        swiftDict[str] = int
+    }
+    return swiftDict
 }
 
+print(zipper(arr1: strArr, arr2: intArr))
 
-print(swiftDict)
 
+// Messing with higher order functions
 let reducedArr = strArr.reduce("", { $0 + " " + $1 } )
 print(reducedArr)
 
