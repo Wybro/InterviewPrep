@@ -20,7 +20,6 @@
 */
 
 func mostFreq(arr: [Int]) -> [Int] {
-//    var numFreq: [Int:Int] = [:]
     var numFreq = [Int:Int]()
     for num in arr {
         if numFreq[num] != nil {
@@ -53,7 +52,6 @@ func mostFreq(arr: [Int]) -> [Int] {
 */
 
     func leastFreq(arr: [Int]) -> [Int] {
-        //    var numFreq: [Int:Int] = [:]
         var numFreq = [Int:Int]()
         var lowestCount: Int? = nil
         if arr.count > 0 {
@@ -88,24 +86,16 @@ func mostFreq(arr: [Int]) -> [Int] {
     let str1 = "hi" --> returns true
     let str2 = "hello" --> returns false
 */
-
-func unique(_ str: String) -> Bool {
-    var charArray: [Character] = []
-    for char in str.characters {
-        if charArray.contains(char) {
-            return false
-        } else {
-            charArray.append(char)
-        }
-    }
-    return true
+func uniqueCheck(str: String) -> Bool {
+    let chars = Set<Character>(str)
+    return chars.count == str.characters.count
 }
 
-let str1 = "hi"
-let str2 = "hello"
+let aString = "alphabet"
+let bString = "abcde"
 
-print(unique(str1))
-print(unique(str2))
+print(uniqueCheck(str: aString))
+print(uniqueCheck(str: bString))
 
 /* -----------------------------------------------------------------------
  Question 4
@@ -120,11 +110,10 @@ print(unique(str2))
  *Bonus: Do this efficiently --> O(n) time after some pre-processing (assumes Strings are roughly same size)
 */
 extension String {
-
     func isSubstring(_ str: String) -> Bool {
-        let charArr = Array(self)
+        let charSet = Set<Character>(self)
         for char in str.characters {
-            if !charArr.contains(char) {
+            if !charSet.contains(char) {
                 return false
             }
         }
