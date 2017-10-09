@@ -83,11 +83,6 @@ func uniqueCheck(str: String) -> Bool {
 
 ### Question 4
 Check if a String contains all the letters of another String
-Note:
-* Don't worry about repeated letters -- look for first instance of a character
-* Assume second String is the substring -- Check if second String contained within first String
-
-**Bonus:** Do this efficiently --> O(n) time after some pre-processing (assumes Strings are roughly same size)
 
 #### Solution:
 ```Swift
