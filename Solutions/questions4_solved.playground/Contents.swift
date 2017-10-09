@@ -1,18 +1,21 @@
-//: Playground - noun: a place where people can play
+/* Topics covered
+* Struct / Class / Enum definitions
+* Data Structures (instantiation, pros / cons, running time)
+* Bonus: Delegates, ARC / Memory Management
+--------
+ */
+/*
+Question 1:
+reverse a number
 
-import UIKit
-
-
-/* reverse a number
-
- 123 -> 321
+ -Example:
+     123 -> 321
  
  */
 
 func reverse(num: Int) -> Int {
     let numStr = "\(num)"
-    let numStrReversed = String(numStr.reversed())
-    return Int(numStrReversed)!
+    return Int(String(numStr.reversed()))!
 }
 
 print(reverse(num: 123))
@@ -26,11 +29,14 @@ func arrayFun(arr: [String]) -> String {
 print(arrayFun(arr: ["C","a","t"]))
 
 /*
- Array of strings; want only the strings that are greater than 3 characters long
+ Question 2:
+ Given an array of strings:
+ * we want only the strings that are greater than 3 characters long
  Of those, return a dictionary where the key represents the character and the value
  represents the count of the character across the array
- 
- ex: let arr = ["a", "aa", "aaa", "aaaa"] -> ["a": 4]
+ Bonus: Make and use a String extension called length()
+ -Example:
+     let arr = ["a", "aa", "aaa", "aaaa"] -> ["a": 4]
  */
 func charCount(arr: [String]) -> [Character:Int] {
     
@@ -57,25 +63,15 @@ extension String {
  let arr = ["a", "aa", "aaa", "aaaa"]
 print(charCount(arr: arr))
 
-/* convert an array of ints into an array of strings
+/*
+ Question 3
+ convert an array of ints into an array of strings
  */
 
 func convert(arr: [Int]) -> [String] {
-    
     return arr.map { "\($0)" }
-    
 }
 
-print(convert(arr: [1,2,3,4,5]))
+print(convert(arr: [1,2,3,4]))
 
-//
 
-//let array = ["a","b","c"]
-for (index,letter) in arr.enumerated() {
-    
-}
-
-let array = Array(0...1000)
-print(array[3])
-let array2 = (0...1000).map { $0 }
-print(array2[2])
