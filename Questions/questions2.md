@@ -10,50 +10,59 @@ Define a Person struct that includes the following:
 * `age` property (Int)  
 * function that prints out a greeting String based on the Person's name
 
-#### Solution:
-```Swift
-struct Person {
-  let name: String
-  let age: Int
+<details>
+ <summary><strong>Solution:</strong></summary>
 
-  func greeting() {
-    print("Hello, \(name)")
-  }
-}
-```
+ ```Swift
+ struct Person {
+   let name: String
+   let age: Int
+
+   func greeting() {
+     print("Hello, \(name)")
+   }
+ }
+ ```
+</details>
 --------
 
 ### Question 2
 Define a Car class with some properties, one custom constructor, and a default constructor -- `init()`
 
-#### Solution:
-```Swift
-class Car {
-  let model: String
-  let year: Int
+<details>
+ <summary><strong>Solution:</strong></summary>
 
-  init() {
-    model = ""
-    year = 0
-  }
+ ```Swift
+ class Car {
+   let model: String
+   let year: Int
 
-  init(model: String, year: Int) {
-    model = model
-    year =  year
-  }
-}
-```
+   init() {
+     model = ""
+     year = 0
+   }
+
+   init(model: String, year: Int) {
+     model = model
+     year =  year
+   }
+ }
+ ```
+</details>
 --------
 
 ### Question 3
 Define an enum Compass that includes cases for all directions
 
-#### Solution:
-```Swift
-enum Compass {
-  case north, east, south, west
-}
-```
+<details>
+ <summary><strong>Solution:</strong></summary>
+
+ ```Swift
+ enum Compass {
+   case north, east, south, west
+ }
+ ```
+</details>
 --------
 
 ### Question 4
@@ -68,59 +77,66 @@ ARC = Automatic Reference Counting
 * This means both objects will stay alive until the references are removed
 * Retain cycles can lead to memory leaks if not handled properly
 
-#### Solution:  
-* It might be useful to maintain a strong retain cycle when an operation should outlive the entity that initiated it.
+<details>
+ <summary><strong>Solution:</strong></summary>
+
+It might be useful to maintain a strong retain cycle when an operation should outlive the entity that initiated it.
+
+</details>
 --------
 
 ### Question 5
 Create two classes and implement the `delegate` pattern
 
-#### Solution:
-Step 1: Create two structs
-```Swift
-struct A {}
+<details>
+ <summary><strong>Solution:</strong></summary>
 
-struct B {}
-```
+ Step 1: Create two structs
+ ```Swift
+ struct A {}
 
-Step 2: Create a protocol delegate for one of the classes and write simple method signature for delegate to implement
-```Swift
-protocol ADelegate {
-  func someDelegateFunc()
-}
-```
+ struct B {}
+ ```
 
-Step 3: Create a delegate property on A with a method that will call the delegate function
-```Swift
-struct A {
-  var delegate: ADelegate?
+ Step 2: Create a protocol delegate for one of the classes and write simple method signature for delegate to implement
+ ```Swift
+ protocol ADelegate {
+   func someDelegateFunc()
+ }
+ ```
 
-  func delegatedMethod() {
-    print("Here")
-    delegate?.someDelegateFunc()
-  }
-}
-```
+ Step 3: Create a delegate property on A with a method that will call the delegate function
+ ```Swift
+ struct A {
+   var delegate: ADelegate?
 
-Step 4: Inherit the protocol on the correct class -- put a print statement here to test
-```Swift
-  struct B: ADelegate {
-    func someDelegateFunc() {
-      print("Inside delegate")
-    }
-  }
-```
+   func delegatedMethod() {
+     print("Here")
+     delegate?.someDelegateFunc()
+   }
+ }
+ ```
 
-Step 5: Create instances of these classes and set the delegate of the proper class
-```Swift
-var a = A()
-let b = B()
+ Step 4: Inherit the protocol on the correct class -- put a print statement here to test
+ ```Swift
+   struct B: ADelegate {
+     func someDelegateFunc() {
+       print("Inside delegate")
+     }
+   }
+ ```
 
-a.delegate = b
-```
+ Step 5: Create instances of these classes and set the delegate of the proper class
+ ```Swift
+ var a = A()
+ let b = B()
 
-Step 6: Call the function on the parent (the class that doesn't inherit the protocol)
-```Swift
-a.delegatedMethod()
-```
+ a.delegate = b
+ ```
+
+ Step 6: Call the function on the parent (the class that doesn't inherit the protocol)
+ ```Swift
+ a.delegatedMethod()
+ ```
+</details>
 --------
