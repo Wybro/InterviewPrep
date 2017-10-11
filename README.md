@@ -29,7 +29,8 @@ A collection of Swift questions and challenges to help prepare for a Swift / iOS
 
 ## Questions
 
-| Topics Covered | Questions | Solutions |
-|:--------------:|:---------:|:---------:|
-|Arrays, etc.    |[The Basics](Questions/questions1.md)|[Solutions](Solutions/solutions1.md)|
-|Classes, Structs, etc.   |[Object Orientation](Questions/questions2.md)|[Solutions](Solutions/questions2.md)|
+| Topics Covered | Questions |
+|:--------------:|:---------:|
+|Arrays, etc.    |[The Basics](Questions/questions1.md)|
+|Classes, Structs, etc.   |[Object Orientation](Questions/questions2.md)|
+|Substrings, Typealias protocol, etc.   |[Type Manipulation](Questions/questions3.md)|
