@@ -33,4 +33,4 @@ A collection of Swift questions and challenges to help prepare for a Swift / iOS
 |:--------------:|:---------:|
 |Arrays, etc.    |[The Basics](Questions/questions1.md)|
 |Classes, Structs, etc.   |[Object Orientation](Questions/questions2.md)|
-|Substrings, Typealias protocol, etc.   |[Type Manipulation](Questions/questions3.md)|
+|Substrings, Typealias, etc.   |[Type Manipulation](Questions/questions3.md)|
