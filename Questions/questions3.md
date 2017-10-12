@@ -17,17 +17,17 @@
 ```Swift
 extension String {
 
-func length() -> Int {
-return self.characters.count
-}
+  func length() -> Int {
+    return self.characters.count
+  }
 
-func wholeStr() -> String {
-let endStartIndex = index(endIndex, offsetBy: -2)
-let firstRange = startIndex..<endStartIndex
-let secondRange = endStartIndex..<endIndex
+  func wholeStr() -> String {
+    let endStartIndex = index(endIndex, offsetBy: -2)
+    let firstRange = startIndex..<endStartIndex
+    let secondRange = endStartIndex..<endIndex
 
-return String(self[firstRange] + self[secondRange].uppercased())
-}
+    return String(self[firstRange] + self[secondRange].uppercased())
+  }
 }
 
 let strArr: [String?] = ["Do", "Connor", "Kyle", "A", "", nil]
@@ -44,9 +44,7 @@ Given a struct, `typealias` it to another name
 <summary><strong>Solution:</strong></summary><br>
 
 ```Swift
-struct Connor {
-
-}
+struct Connor {}
 
 let a = Connor()
 typealias Kyle = Connor
