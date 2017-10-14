@@ -35,4 +35,3 @@ A collection of Swift questions and challenges to help prepare for a Swift / iOS
 |Classes, Structs, etc.   |[Object Orientation](Questions/questions2.md)|
 |Substrings, Typealias, etc.   |[Type Basics](Questions/questions3.md)|
 |String, Int, Array Manipulation  |[Type Manipulation](Questions/questions4.md)||Dictionaries, etc.| [Data Structure Deep Dive] (Questions/questions5.md)|
-
