@@ -1,7 +1,8 @@
 ## Topics covered
 * Struct / Class / Enum definitions
 * Data Structures (instantiation, pros / cons, running time)
-**Bonus:** Delegates, ARC / Memory Management
+* Bonus: Delegates, ARC / Memory Management
+
 --------
 
 ### Question 1
