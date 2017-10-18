@@ -6,7 +6,7 @@
  --------
 
 ### Question 1
-Zip Problem: Use ```Swift zip``` to enumerate another list
+Zip Problem: Use ```zip``` to enumerate another list
 
 #### Example:
 ```Swift
